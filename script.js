@@ -11,13 +11,8 @@ const getSum = () => {
     total += parseFloat(price.innerText);
   });
 
-  const newRow = document.createElement("tr");
-  const newCell = document.createElement("td");
-  
-  newCell.innerText = `Total Price: ${total}`;
-  newRow.appendChild(newCell);
-  
-  document.querySelector("table").appendChild(newRow);
+  const ans=document.getElementById("ans")
+	  ans.innerText = `Total Price: ${total}`;
 };
 
 getSumBtn.addEventListener("click", getSum);
